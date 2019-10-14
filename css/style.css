@@ -8,7 +8,9 @@
     background-color: rgb(167, 164, 164);
 }
 .navbar {
-    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: logo menu account;
     padding: 0em;
     margin: 0;
     background-color: whitesmoke;
@@ -135,13 +137,24 @@
 .right p {
     margin: 20em 0 1.125em 1em;
     color: white;
-
-
+}
 
 /* MEDIA QUERIES*/
-@media screen (min-width: 500px) {    
+
+@media screen and (min-width: 500px) {
     .logo {
-    max-width: 5em;
-    grid-area: logo;
-    justify-self: start;
-}  
+        max-width: 5em;
+        grid-area: logo;
+        justify-self: start;
+        margin: 0 1em 0 0.6em;
+    }
+    .btn {
+        display: none;
+    }
+    .navbar {
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+    .mainmenu ul{
+        display: block;
+    }
+}
