@@ -3,10 +3,12 @@
     padding: 0;
 }
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i&display=swap');
 .body {
     background-color: rgb(167, 164, 164);
 }
 .navbar {
+    width: auto;
     padding: 0em;
     margin: 0;
     background-color: whitesmoke;
@@ -48,11 +50,12 @@
     color: gray;
 }
 .mainmenu {
+    grid-area: left;
     background-color: rgb(247, 240, 240);
     max-width: 100px;
     text-align: left;
     list-style: none;
-    margin: 0.2em 0 0 0.7em;
+    margin: 0.2em 0 0.5em 0.7em;
 }
 .mainmenu a {
     margin: 1em;
@@ -80,3 +83,65 @@
     font-size: 0.45em;
     font-weight: 300;
 }
+.header {
+    display: grid;
+}
+.left {
+    display: none;
+    width: auto;
+    background-image: url("/img/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.left p {
+    margin: 20em 0 1.125em 1em;
+    color: white;
+}
+.center {
+    width: 100%;
+    background-image: url("/img/crossroads-signs.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.undecided {
+    margin: 2.5em;
+    font-family:'EB Garamond', serif;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+.center-text {
+    display: inline-block;
+    width: auto;
+    margin: 10em 0 0 0em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5em;
+    background-color: darkolivegreen;
+    padding: 0.6em;
+    color: white;
+ }
+.right {
+    display: none;
+    background-image: url("/img/chris-galbraith-7XAM0J3dNQM-unsplash.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.right p {
+    margin: 20em 0 1.125em 1em;
+    color: white;
+
+
+
+/* MEDIA QUERIES*/
+@media screen (min-width: 500px) {    
+    .logo {
+    max-width: 5em;
+    grid-area: logo;
+    justify-self: start;
+}  
