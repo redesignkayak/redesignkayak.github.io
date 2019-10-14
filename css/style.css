@@ -7,6 +7,9 @@
 .body {
     background-color: rgb(167, 164, 164);
 }
+ul, ol {
+    list-style: none;
+}
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -36,6 +39,16 @@
     color: rgb(36, 35, 35);
     border: none;
 }
+.navmenu > li {
+    display: none;
+}
+.navmenu li a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: rgb(110, 108, 108);
+    padding-right: 1em;
+    grid-area: menu;
+}
 .account {
     grid-area: account;
     justify-self: right;
@@ -52,7 +65,6 @@
     color: gray;
 }
 .mainmenu {
-    grid-area: left;
     background-color: rgb(247, 240, 240);
     max-width: 100px;
     text-align: left;
@@ -90,14 +102,6 @@
 }
 .left {
     display: none;
-    width: auto;
-    background-image: url("/img/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.left p {
-    margin: 20em 0 1.125em 1em;
-    color: white;
 }
 .center {
     width: 100%;
@@ -116,8 +120,8 @@
     color: white;
 }
 .center-text {
-    display: inline-block;
-    width: auto;
+    display: block;
+    width: 100%;
     margin: 10em 0 0 0em;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
@@ -142,6 +146,27 @@
 /* MEDIA QUERIES*/
 
 @media screen and (min-width: 500px) {
+    .header {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: left center;
+    }
+    .left {
+        display: grid;
+        width: auto;
+        background-image: url("/img/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .left p {
+        color: white;
+        align-self: flex-end;
+        margin: 0 0 1em 1em;
+    } 
+    .mainmenu {
+        grid-area: left;
+    }   
+}
+@media screen and (min-width: 780px) {
     .logo {
         max-width: 5em;
         grid-area: logo;
@@ -152,9 +177,58 @@
         display: none;
     }
     .navbar {
-        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-columns: 120px 2fr 1fr;
     }
-    .mainmenu ul{
-        display: block;
+    .navmenu > li {
+        display: inline-block;
+        margin: 2em 0 0 0.5em;
     }
+    .mainmenu {
+        display: none;
+    }
+    .account {
+        margin: 0em 0em 1.8em 1em;
+        width: auto;
+    }
+    .account li {
+        padding-right: 1.2em;
+    }          
 }
+@media screen and (min-width: 930px) {
+    .header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: left center right;
+    }
+    .account li {
+        width: auto;
+        padding-right: 0.9em;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.7em;
+    }
+    .language a ::after{
+        content: " Language";
+    }
+    .myaccount a ::after{
+        content: " My Account";
+    }
+    .signup a ::after {
+        content: " Sign up";
+    }
+    .help a ::after{
+        content: " Help";
+    }
+    .right {
+        display: grid;
+        width: auto;
+        background-image: url("/img/chris-galbraith-7XAM0J3dNQM-unsplash.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .right p {
+        color: white;
+        align-self: flex-end;
+        margin: 0 0 1em 1em;
+    } 
+
+}
+
