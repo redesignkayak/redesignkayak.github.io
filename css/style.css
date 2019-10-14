@@ -105,6 +105,7 @@ ul, ol {
 }
 .center {
     width: 100%;
+    height: auto;
     background-image: url("/img/crossroads-signs.jpg");
     background-size: 100% 100%;
     background-position: center;
@@ -160,7 +161,7 @@ ul, ol {
     .left p {
         color: white;
         align-self: flex-end;
-        margin: 0 0 1em 1em;
+        margin: 0 0 0.5em 1em;
     } 
     .mainmenu {
         grid-area: left;
@@ -220,14 +221,15 @@ ul, ol {
     .right {
         display: grid;
         width: auto;
-        background-image: url("/img/chris-galbraith-7XAM0J3dNQM-unsplash.jpg");
+        height: auto;
+        background-image: url("/img/Cancun.jpg");;
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
     .right p {
-        color: white;
+        color: black;
         align-self: flex-end;
-        margin: 0 0 1em 1em;
+        margin: 0 0 0.5em 1em;
     } 
 
 }
