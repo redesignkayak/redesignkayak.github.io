@@ -8,21 +8,25 @@
     background-color: rgb(230, 227, 227);
 }
 .adjst {
-    margin: 0 1em;
+    margin: 0.7em 1em;
 }
+.more {
+    margin: 0.7em 1em;
+}
+
 ul, ol {
     list-style: none;
 }
 .navbar {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
     grid-template-areas: logo menu account;
     padding: 0em;
     margin: 0;
     background-color: whitesmoke;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr auto;
     grid-template-areas: "logo menu account";
     overflow: hidden;
     position: fixed;
@@ -70,22 +74,22 @@ ul, ol {
 .account li {
     display: inline-block;
     list-style: none;
-    font-size: 0.5em;
+    font-size: 0.9em;
     padding-right: 0.3em;
     color: gray;
 }
 .mainmenu {
-    display: none;
+    display: block;
     background-color: rgb(247, 240, 240);
-    max-width: 100px;
+    max-width: 200px;
     text-align: left;
     list-style: none;
-    margin: 0.2em 0 0.5em 0.7em;
+    margin: 3em 0 0.5em 0.7em;
 }
 .mainmenu a {
     margin: 1em;
     font-family: 'Lato', sans-serif;
-    font-size: 0.5em;
+    font-size: 1.3em;
     font-weight: 300;
     line-height: 2em;
     text-decoration: none;
@@ -93,7 +97,7 @@ ul, ol {
 }
 .search {
     background-color: rgb(194, 187, 187);
-    max-width: 90px;
+    max-width: 30rem;
     padding: 0.3em;
     margin: 0 0 0.5em 0.5em;
     border: none;
@@ -105,7 +109,7 @@ ul, ol {
     background-size: 1em;
     padding-left: 2.3em;
     font-family: 'Lato', sans-serif;
-    font-size: 0.45em;
+    font-size: 0.9em;
     font-weight: 300;
 }
 .header {
@@ -123,7 +127,7 @@ ul, ol {
     background-repeat: no-repeat;
 }
 .undecided {
-    margin: 5em 0em;
+    margin: 2em 0em;
     font-family:'EB Garamond', serif;
     font-size: 2em;
     font-style: italic;
@@ -139,17 +143,29 @@ ul, ol {
 .destinations-text {
     display: block;
     max-width: 100%;
-    margin: 0;
+    margin: 0 0 1em 0;
+    padding: 0.7em 0;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     font-weight: 400;
     text-align: center;
     line-height: 1.5em;
     background-color: darkolivegreen;
-    padding: 0,3em;
+    padding: 0.2em 0,3em;
     color: white;
     overflow: hidden;
  }
+.subtittle {
+    display: inline-block;
+    font-family:'EB Garamond', serif;
+    font-size: 1em;
+    background-color: whitesmoke;
+    padding: 0.4em 0.8em;
+    margin: 0.7em 0 0 0;
+    justify-self: right;
+    border-radius: 0 1em 1em 0;
+    box-shadow: 0 0.2em 0.5em 0.1em rgb(78, 48, 3);
+}
 .right {
     display: none;
     background-image: url("/img/chris-galbraith-7XAM0J3dNQM-unsplash.jpg");
@@ -183,11 +199,11 @@ ul, ol {
     border-radius: 0.5em;
     font-family: 'Questrial', sans-serif;
   }
-  .newyorkcity {
+  .place-picture {
     text-align: center;
     overflow: hidden;
   }
-  .newyork-img {
+  .place-img {
     max-width: 100%;
   }
   .button {
@@ -199,6 +215,16 @@ ul, ol {
     color: #353333;
     margin: 0 1em;
     padding: 0.3em 0em;
+  }
+  .more-subtittle {
+      width: 100%;
+      background-color: rgb(6, 28, 116);
+      color: white;
+      padding: 1em 0em;
+      font-family: 'Questrial', sans-serif;
+      font-size: 1.5em;
+      font-weight: 500;
+      text-align: center;
   }
   .deals {
     font-family: 'Asap', sans-serif;
@@ -251,7 +277,7 @@ ul, ol {
 
 
 
-  .button a ::after {
+  .destinations button a::after {
     content: " >";
   }
     
@@ -310,6 +336,9 @@ ul, ol {
     .account li {
         padding-right: 1.2em;
     }
+    .undecided {
+        margin: 6em;
+    }
     .destinations-text {
         padding: 0.5em 0;
         font-size: 1.5em;
@@ -318,7 +347,16 @@ ul, ol {
     .destinations {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 1em;
-    }         
+    }
+    .more {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .more-subtittle {
+        font-size: 2em;
+        padding: 0.3em 0;
+    }          
 }
 @media screen and (min-width: 930px) {
     .navbar {
@@ -326,7 +364,7 @@ ul, ol {
     }
     .header {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: left center right;
+        grid-template-areas: "left center right";
     }
     .account li {
         width: auto;
@@ -334,6 +372,10 @@ ul, ol {
         font-family: 'Lato', sans-serif;
         font-size: 0.7em;
     }
+    .undecided {
+        margin: 7em 0 7em 0;
+    }
+
     .language a ::after{
         content: " Language";
     }
@@ -358,11 +400,41 @@ ul, ol {
         color: black;
         align-self: flex-end;
         margin: 0 0 0.5em 1em;
-    } 
+    }
     .destinations {
-        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-columns: 2fr 2fr;
         grid-column-gap: 1em;
-        grid-template-areas: "one two three";
-    }         
+        grid-template-areas: "one two"
+                            "four five"
+                            "seven eight"
+                            "ten eleven"
+                            "thirteen fourteen";
+        grid-gap: 1em;
+        max-width: 70%;
+    }
+    .day {
+        grid-area: three;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 0.85em;
+    }
+    .day h1 {
+        padding: 0.5em;
+    }
+    .week {
+        grid-area: six;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-size: 0.85em;
+    }
+    .subtittle {
+        font-size: 1.5em;
+        background-color: whitesmoke;
+        padding: 0.4em 0.8em;
+        margin: 0.7em 0 0 0;
+        justify-self: right;
+        border-radius: 0 1em 1em 0;
+        box-shadow: 0 0.2em 0.5em 0.1em rgb(78, 48, 3);
+        
 }
 
