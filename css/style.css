@@ -14,6 +14,7 @@ ul, ol {
     list-style: none;
 }
 .navbar {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: logo menu account;
@@ -24,6 +25,10 @@ ul, ol {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "logo menu account";
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
 }
 .logo {
     max-width: 3.5em;
@@ -66,7 +71,7 @@ ul, ol {
     display: inline-block;
     list-style: none;
     font-size: 0.5em;
-    padding-right: 0.4em;
+    padding-right: 0.3em;
     color: gray;
 }
 .mainmenu {
@@ -290,7 +295,7 @@ ul, ol {
         display: none;
     }
     .navbar {
-        grid-template-columns: 120px 2fr 1fr;
+        grid-template-columns: auto auto auto;
     }
     .navmenu > li {
         display: inline-block;
@@ -306,7 +311,7 @@ ul, ol {
         padding-right: 1.2em;
     }
     .destinations-text {
-        padding: 1.3em;
+        padding: 0.5em 0;
         font-size: 1.5em;
     }
     
@@ -316,6 +321,9 @@ ul, ol {
     }         
 }
 @media screen and (min-width: 930px) {
+    .navbar {
+        grid-template-columns: auto auto auto;
+    }
     .header {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: left center right;
