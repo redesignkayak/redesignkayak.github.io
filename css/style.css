@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i|EB+Garamond:400,400i,500,500i,600,600i,700,700i|Questrial&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i&display=swap');
 .body {
-    background-color: rgb(167, 164, 164);
+    background-color: rgb(230, 227, 227);
+}
+.adjst {
+    margin: 0 1em;
 }
 ul, ol {
     list-style: none;
@@ -41,12 +44,14 @@ ul, ol {
 }
 .navmenu > li {
     display: none;
+    margin: 2em 0 0 0;
 }
 .navmenu li a {
+    margin: 2em 0 0 0.5em;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     color: rgb(110, 108, 108);
-    padding-right: 1em;
+    padding-right: -10em;
     grid-area: menu;
 }
 .account {
@@ -65,6 +70,7 @@ ul, ol {
     color: gray;
 }
 .mainmenu {
+    display: none;
     background-color: rgb(247, 240, 240);
     max-width: 100px;
     text-align: left;
@@ -112,7 +118,7 @@ ul, ol {
     background-repeat: no-repeat;
 }
 .undecided {
-    margin: 2.5em;
+    margin: 5em 0em;
     font-family:'EB Garamond', serif;
     font-size: 2em;
     font-style: italic;
@@ -120,18 +126,24 @@ ul, ol {
     text-align: center;
     color: white;
 }
-.center-text {
+.destinations {
+    display: grid;
+    width: auto;
+    text-align: center;
+}
+.destinations-text {
     display: block;
-    width: 100%;
-    margin: 10em 0 0 0em;
+    max-width: 100%;
+    margin: 0;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     font-weight: 400;
     text-align: center;
     line-height: 1.5em;
     background-color: darkolivegreen;
-    padding: 0.6em;
+    padding: 0,3em;
     color: white;
+    overflow: hidden;
  }
 .right {
     display: none;
@@ -143,6 +155,105 @@ ul, ol {
     margin: 20em 0 1.125em 1em;
     color: white;
 }
+.trip h1 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin: 0.6em 1em ;
+}
+.trip p {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    margin: 0.5em 1em 0.8em 1em;
+}
+.trip {
+    background-color: white;
+    display: grid;
+    overflow: hidden;
+    max-width: 30em;
+    margin: 1em 0;
+    text-align: center;
+    box-shadow: 5px 5px 1em rgba(0, 0, 0, .5);
+    border-radius: 0.5em;
+    font-family: 'Questrial', sans-serif;
+  }
+  .newyorkcity {
+    text-align: center;
+    overflow: hidden;
+  }
+  .newyork-img {
+    max-width: 100%;
+  }
+  .button {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none; 
+    text-align: right;
+    color: #353333;
+    margin: 0 1em;
+    padding: 0.3em 0em;
+  }
+  .deals {
+    font-family: 'Asap', sans-serif;
+    background-color: floralwhite;
+    display: grid;
+    overflow: hidden;
+    max-width: 30em;
+    margin: 1em 0;
+    text-align: center;
+    box-shadow: 5px 5px 1em rgba(0, 0, 0, .5);
+    font-family: 'Questrial', sans-serif;
+  }
+  .deals h1 {
+      font-size: 1.5em;
+      font-weight: 400;
+      line-height: 1.4em;
+      padding: 1em;
+      background-color: rgb(51, 146, 4);
+      color: white;
+  }
+  .deals h2 {
+      font-size: 1.3em;
+      color: rgb(65, 63, 63);
+      margin: 0.5em 0;;
+  }
+  .deals p {
+      font-size: 0.9em;
+      line-height: 1.4em;
+      margin: 0.5em 1em;
+  }
+  .week h1{
+    background-color: rgb(22, 92, 167);
+    color: white;
+  }
+  .media {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .subscribe {
+      font-family: 'Asap', sans-serif;
+      font-size: 1.2em;
+      text-align: left;
+      background-color: forestgreen;
+  }
+  .icon-subs {
+      background-color: fuchsia;
+  }
+
+
+
+
+
+  .button a ::after {
+    content: " >";
+  }
+    
+
+  
+  
+  
 
 /* MEDIA QUERIES*/
 
@@ -165,9 +276,10 @@ ul, ol {
     } 
     .mainmenu {
         grid-area: left;
-    }   
+    }
+
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 760px) {
     .logo {
         max-width: 5em;
         grid-area: logo;
@@ -182,7 +294,6 @@ ul, ol {
     }
     .navmenu > li {
         display: inline-block;
-        margin: 2em 0 0 0.5em;
     }
     .mainmenu {
         display: none;
@@ -193,7 +304,16 @@ ul, ol {
     }
     .account li {
         padding-right: 1.2em;
-    }          
+    }
+    .destinations-text {
+        padding: 1.3em;
+        font-size: 1.5em;
+    }
+    
+    .destinations {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+    }         
 }
 @media screen and (min-width: 930px) {
     .header {
@@ -231,6 +351,10 @@ ul, ol {
         align-self: flex-end;
         margin: 0 0 0.5em 1em;
     } 
-
+    .destinations {
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-column-gap: 1em;
+        grid-template-areas: "one two three";
+    }         
 }
 
