@@ -432,17 +432,6 @@ ul, ol {
         align-self: flex-end;
         margin: 0 0 0.5em 1em;
     }
-    .destinations {
-        grid-template-columns: 2fr 2fr;
-        grid-column-gap: 1em;
-        grid-template-areas: "one two"
-                            "four five"
-                            "seven eight"
-                            "ten eleven"
-                            "thirteen fourteen";
-        grid-gap: 1em;
-        max-width: 70%;
-    }
     .day {
         grid-area: three;
         grid-row-start: 1;
@@ -466,6 +455,6 @@ ul, ol {
         justify-self: right;
         border-radius: 0 1em 1em 0;
         box-shadow: 0 0.2em 0.5em 0.1em rgb(78, 48, 3);
-        
+    } 
 }
 
