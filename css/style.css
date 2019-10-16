@@ -216,6 +216,9 @@ ul, ol {
     margin: 0 1em;
     padding: 0.3em 0em;
   }
+  .america a {
+      background-color: lightsalmon;
+  }
   .day-subtittle {
       width: 100%;
       background-color: rgb(51, 146, 4);
@@ -238,69 +241,83 @@ ul, ol {
 }
 
   .deals {
-    font-family: 'Asap', sans-serif;
-    background-color: floralwhite;
     display: grid;
     overflow: hidden;
-    max-width: 30em;
     margin: 1em 0;
     text-align: center;
     box-shadow: 5px 5px 1em rgba(0, 0, 0, .5);
-    font-family: 'Questrial', sans-serif;
   }
   .deals h1  {
-      font-family: 'EB Garamond', serif;
-      font-size: 1.8em;
-      font-style: italic;
-      font-weight: 400;
-      line-height: 1.4em;
-      padding: 0.5em 0.7em;
-      color: rgb(93, 97, 94);
-  }
-  .deals h2 {
-      font-family: 'EB Garamond', serif;
-      font-size: 1.3em;
-      font-weight: 400;
-      font-style: italic;
-      color: rgb(65, 63, 63);
-      margin: 0.5em 0;;
-  }
-  .deals p {
-      font-family: 'EB Garamond', serif;
-      font-size: 1em;
-      line-height: 1.4em;
-      margin: 0.5em 1em;
-  }
-  .week h1 {
-      font-size: 1.5em;
-    color: gb(93, 97, 94);
-  }
-  .subscribe {
-      font-family: 'Asap', sans-serif;
-      font-size: 1.5em;
-      text-align: center;
-      line-height: 2em;
-      background-color: cyan;
-      color: white;
-      padding: 0.1em 0em;
-  }
-  .icon-subs {
-      font-family: 'Asap', sans-serif;
-      font-size: 1.5em;
-      background-color: magenta;
-      padding: 0.7em 0em;
-      text-align: center;
-  }
+    font-family: 'EB Garamond', serif;
+    font-size: 1.8em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding: 0.5em 0.7em;
+    color: rgb(93, 97, 94);
+}
+.deals h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(65, 63, 63);
+    margin: 0.5em 0;;
+}
+.deals p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: 0.5em 1em 1em 1.2em;
+}
+.deals a {
+    font-size: 1em;
+}
+.cozumel {
+background-color: floralwhite;
+}
+.cozumel h1 {
+    background-color: rgb(110, 197, 193) ;
+}
+.disney {
+background-color: lightblue;
+}
+.disney h1 {
+    background-color: yellow;
+}
+.thailand {
+    background-color: rgb(138, 202, 181);
+}
+.thailand h1 {
+background-color: rgb(176, 198, 236);
+}
+.valpo {
+    background-color: rgb(161, 238, 146);
+}
+.valpo h1 {
+    background-color: yellowgreen;
+}    
+.join {
+    display: inline-block;
+    margin: 1em 0 0 1em;
+}
+.joinicon {
+    background-color: mediumblue;
+    float: left;
+    font-size: 2em;
+    padding: 0.5em;
+    color: white;
+    border-radius: 2.5rem 0 0 2.5rem;
+}
+.subscribe {
+    float: left;
+    font-size: 0.7em;
+    background-color: white;
+    padding: 2.1em;
+    border-radius: 0rem 2.5 2.5rem;
+    border: solid mediumblue;
+}
 
-
-
-
-
-
-  .destinations button a::after {
-    content: " >";
-  }
-    
 
   
   
@@ -363,31 +380,22 @@ ul, ol {
         padding: 0.5em 0;
         font-size: 1.5em;
     }
-    .main {
+    .destinations {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-            "america america"
-            "ameone ametwo"
-            "amethree amefour"
-            "europe europe"
-            "head head"
-            "side stry"
-            "side rltd"
-            "foot foot"
-            "head head"
-            "side stry"
-            "side rltd";
-        }
-    .america-text {
-        grid-area: america;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }    
-    .more-subtittle {
-        font-size: 2em;
-        padding: 0.3em 0;
-    }          
+        grid-gap: 1em;
+    }
+    .more {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .featured {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
 }
 @media screen and (min-width: 930px) {
     .navbar {
@@ -432,6 +440,17 @@ ul, ol {
         align-self: flex-end;
         margin: 0 0 0.5em 1em;
     }
+    .destinations {
+        grid-template-columns: 2fr 2fr;
+        grid-column-gap: 1em;
+        grid-template-areas: "one two"
+                            "four five"
+                            "seven eight"
+                            "ten eleven"
+                            "thirteen fourteen";
+        grid-gap: 1em;
+        max-width: 70%;
+    }
     .day {
         grid-area: three;
         grid-row-start: 1;
@@ -455,6 +474,6 @@ ul, ol {
         justify-self: right;
         border-radius: 0 1em 1em 0;
         box-shadow: 0 0.2em 0.5em 0.1em rgb(78, 48, 3);
-    } 
+    }  
 }
 
