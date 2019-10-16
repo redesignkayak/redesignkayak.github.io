@@ -218,7 +218,7 @@ ul, ol {
   }
   .more-subtittle {
       width: 100%;
-      background-color: rgb(6, 28, 116);
+      background-color: rgb(51, 146, 4);
       color: white;
       padding: 1em 0em;
       font-family: 'Questrial', sans-serif;
@@ -238,20 +238,25 @@ ul, ol {
     font-family: 'Questrial', sans-serif;
   }
   .deals h1 {
-      font-size: 1.5em;
+      font-family: 'EB Garamond', serif;
+      font-size: 1.8em;
+      font-style: italic;
       font-weight: 400;
       line-height: 1.4em;
-      padding: 1em;
-      background-color: rgb(51, 146, 4);
-      color: white;
+      padding: 0.5em 0.7em;
+      color: rgb(93, 97, 94);
   }
   .deals h2 {
+      font-family: 'EB Garamond', serif;
       font-size: 1.3em;
+      font-weight: 400;
+      font-style: italic;
       color: rgb(65, 63, 63);
       margin: 0.5em 0;;
   }
   .deals p {
-      font-size: 0.9em;
+      font-family: 'EB Garamond', serif;
+      font-size: 1em;
       line-height: 1.4em;
       margin: 0.5em 1em;
   }
