@@ -298,6 +298,7 @@ background-color: rgb(176, 198, 236);
     background-color: yellowgreen;
 }    
 .join {
+    width: auto;
     display: inline-block;
     margin: 1em 0 0 1em;
 }
@@ -311,11 +312,30 @@ background-color: rgb(176, 198, 236);
 }
 .subscribe {
     float: left;
-    font-size: 0.7em;
+    font-size: 0.5em;
     background-color: white;
-    padding: 2.1em;
+    padding: 1.2em 1.5em;
     border-radius: 0rem 2.5 2.5rem;
     border: solid mediumblue;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+.subscribe a{
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    margin: 1em 0 0.3em 5em;
+    padding: 0.6em;
+    background-color: rgb(220, 67, 20);
+    color: white;
+}
+.travel-tittle {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 1em 0;
+}
+.travell {
+    width: 100%;
 }
 
 
