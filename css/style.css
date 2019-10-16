@@ -216,7 +216,7 @@ ul, ol {
     margin: 0 1em;
     padding: 0.3em 0em;
   }
-  .more-subtittle {
+  .day-subtittle {
       width: 100%;
       background-color: rgb(51, 146, 4);
       color: white;
@@ -226,6 +226,17 @@ ul, ol {
       font-weight: 500;
       text-align: center;
   }
+  .week-subtittle {
+    width: 100%;
+    background-color: rgb(22, 92, 167);
+    color: white;
+    padding: 1em 0em;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
   .deals {
     font-family: 'Asap', sans-serif;
     background-color: floralwhite;
@@ -237,7 +248,7 @@ ul, ol {
     box-shadow: 5px 5px 1em rgba(0, 0, 0, .5);
     font-family: 'Questrial', sans-serif;
   }
-  .deals h1 {
+  .deals h1  {
       font-family: 'EB Garamond', serif;
       font-size: 1.8em;
       font-style: italic;
@@ -260,23 +271,27 @@ ul, ol {
       line-height: 1.4em;
       margin: 0.5em 1em;
   }
-  .week h1{
-    background-color: rgb(22, 92, 167);
-    color: white;
-  }
-  .media {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+  .week h1 {
+      font-size: 1.5em;
+    color: gb(93, 97, 94);
   }
   .subscribe {
       font-family: 'Asap', sans-serif;
-      font-size: 1.2em;
-      text-align: left;
-      background-color: forestgreen;
+      font-size: 1.5em;
+      text-align: center;
+      line-height: 2em;
+      background-color: cyan;
+      color: white;
+      padding: 0.1em 0em;
   }
   .icon-subs {
-      background-color: fuchsia;
+      font-family: 'Asap', sans-serif;
+      font-size: 1.5em;
+      background-color: magenta;
+      padding: 0.7em 0em;
+      text-align: center;
   }
+
 
 
 
@@ -348,16 +363,27 @@ ul, ol {
         padding: 0.5em 0;
         font-size: 1.5em;
     }
-    
-    .destinations {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 1em;
-    }
-    .more {
+    .main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 1em;
-    }
+        grid-template-areas: 
+            "america america"
+            "ameone ametwo"
+            "amethree amefour"
+            "europe europe"
+            "head head"
+            "side stry"
+            "side rltd"
+            "foot foot"
+            "head head"
+            "side stry"
+            "side rltd";
+        }
+    .america-text {
+        grid-area: america;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }    
     .more-subtittle {
         font-size: 2em;
         padding: 0.3em 0;
