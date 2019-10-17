@@ -457,6 +457,10 @@ footer li {
     .navbar {
         grid-template-columns: auto auto auto;
     }
+    .navmenu > li {
+        display: inline-block;
+        margin: 2em 0 0 0;
+    }
     .mainmenu {
         display: none;
     }
@@ -522,11 +526,16 @@ footer li {
     footer li {
         font-size: 0.8em;
         line-height: 0.2rem;
-    }    
+    }
+    .subscript {
+        padding: 0;
+        margin: 3em;
+        justify-self: center;
+    }   
 }
 @media screen and (min-width: 930px) {
     .navbar {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 160px auto auto;
     }
     .header {
         grid-template-columns: 1fr 1fr 1fr;
@@ -538,6 +547,13 @@ footer li {
         font-family: 'Lato', sans-serif;
         font-size: 0.7em;
     }
+    .logo {
+        max-width: 8em;
+    }
+    .navmenu > li {
+        margin: 3em 0 0 0;
+        font-size: 1.2em;
+    }        
     .undecided {
         margin: 7em 0 7em 0;
     }
@@ -568,39 +584,25 @@ footer li {
         margin: 0 0 0.5em 1em;
     }
     .destinations {
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 1em;
-        grid-template-areas: "one two"
-                            "four five"
-                            "seven eight"
-                            "ten eleven"
-                            "thirteen fourteen";
         grid-gap: 1em;
-        max-width: 70%;
     }
-    .day {
-        grid-area: three;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        font-size: 0.85em;
+    .middleeast {
+        grid-template-columns: 1fr 1fr;
+        margin: 1em 2em;
+        grid-gap: 2em;
     }
-    .day h1 {
-        padding: 0.5em;
+    .more {
+        grid-template-columns: 1fr 1fr;
+        margin: 1em 2em;
+        grid-gap: 2em;
     }
-    .week {
-        grid-area: six;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        font-size: 0.85em;
+    .featured {
+        grid-template-columns: 1fr 1fr;
+        margin: 1em 2em;
+        grid-gap: 2em;
     }
-    .subtittle {
-        font-size: 1.5em;
-        background-color: whitesmoke;
-        padding: 0.4em 0.8em;
-        margin: 0.7em 0 0 0;
-        justify-self: right;
-        border-radius: 0 1em 1em 0;
-        box-shadow: 0 0.2em 0.5em 0.1em rgb(78, 48, 3);
-    }  
+
 }
 
