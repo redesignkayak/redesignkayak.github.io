@@ -48,8 +48,9 @@ ul, ol {
     padding: 1em;
     border: none;
     background-color: transparent;
-    color: rgb(36, 35, 35);
-    border: none;
+}
+.btn a {
+    color: #353333;
 }
 .navmenu > li {
     display: none;
@@ -76,7 +77,9 @@ ul, ol {
     list-style: none;
     font-size: 0.9em;
     padding-right: 0.3em;
-    color: gray;
+}
+.account a {
+    color: #353333;
 }
 .mainmenu {
     display: block;
@@ -180,7 +183,7 @@ ul, ol {
     font-family: 'Questrial', sans-serif;
     font-size: 1.3em;
     text-align: left;
-    margin: 0.6em 1em ;
+    margin: 0.6em 1rem ;
 }
 .trip p {
     font-family: 'Questrial', sans-serif;
@@ -212,13 +215,32 @@ ul, ol {
     font-weight: bold;
     text-decoration: none; 
     text-align: right;
-    color: #353333;
     margin: 0 1em;
     padding: 0.3em 0em;
   }
   .america a {
-      background-color: lightsalmon;
+    background-color: rgb(247, 86, 22);
+    margin: 0 0 0 10em;
+    border-radius: 1em 0 0 0;
+    color: white;
+    padding: 0.5rem 1em;
   }
+  .middleeast a {
+    background-color: rgb(8, 97, 3);
+    margin: 0 0 0 10em;
+    border-radius: 1em 0 0 0;
+    color: white;
+    padding: 0.5rem 1em;
+}
+
+  .europe a {
+    background-color: rgb(128, 109, 5);
+    margin: 0 0 0 10em;
+    border-radius: 1em 0 0 0;
+    color: white;
+    padding: 0.5rem 1em;
+}
+
   .day-subtittle {
       width: 100%;
       background-color: rgb(51, 146, 4);
@@ -279,11 +301,25 @@ background-color: floralwhite;
 .cozumel h1 {
     background-color: rgb(110, 197, 193) ;
 }
+.cozumel a {
+    background-color: rgb(110, 197, 193);
+    margin: 0 0 0 10em;
+    border-radius: 1em 0 0 0;
+    color: white;
+    padding: 0.5rem 1em;
+}
 .disney {
 background-color: lightblue;
 }
 .disney h1 {
     background-color: yellow;
+}
+.disney a {
+    background-color: yellow;
+    margin: 0 0 0 10em;
+    border-radius: 1em 0 0 0;
+    color: rgb(43, 41, 41);
+    padding: 0.5rem 1em;
 }
 .thailand {
     background-color: rgb(138, 202, 181);
@@ -291,11 +327,25 @@ background-color: lightblue;
 .thailand h1 {
 background-color: rgb(176, 198, 236);
 }
+.thailand a {
+    background-color: rgb(176, 198, 236);
+    margin: 0 0 0 10em;
+    border-radius: 1em 0 0 0;
+    color: rgb(43, 41, 41);
+    padding: 0.5rem 1em;
+}
 .valpo {
     background-color: rgb(161, 238, 146);
 }
 .valpo h1 {
     background-color: yellowgreen;
+}
+.valpo a {
+    background-color: yellowgreen;
+    margin: 0 0 0 10em;
+    border-radius: 1em 0 0 0;
+    color: rgb(43, 41, 41);
+    padding: 0.5rem 1em;
 }    
 .join {
     width: auto;
@@ -320,7 +370,7 @@ background-color: rgb(176, 198, 236);
     font-family: 'Lato', sans-serif;
     font-weight: 600;
 }
-.subscribe a{
+.subscribe a {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     margin: 1em 0 0.3em 5em;
@@ -332,11 +382,44 @@ background-color: rgb(176, 198, 236);
     font-family: 'EB Garamond', serif;
     font-size: 1.2em;
     font-style: italic;
-    margin: 1em 0;
+    margin: 1em 1em;
 }
 .travellers {
-    width: 100%;
+    background-color: white;
+    padding: 0.7em;
+    overflow: hidden;
+    max-width: 150px;
 }
+.travell {
+    float: left;
+}
+.travell-text {
+    float: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 0.8em;
+    font-style: italic;
+    padding: 1em;
+}
+.footer {
+    background-color: #353333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1em 0 0 0;
+}
+footer h2 {
+    color: white;
+    font-size: 1em;
+    padding: 1em 1em;
+}
+footer li {
+    color: white;
+    font-size: 0.8em;
+    padding: 1rem 1rem;
+    line-height: 0.4rem;
+}
+.subscript {
+    margin: 1em;
+}
+
 
 
   
