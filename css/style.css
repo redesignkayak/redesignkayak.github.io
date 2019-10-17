@@ -497,27 +497,21 @@ footer li {
         padding: 0.4em 0.8em;
         margin: 0.7em 0 0 0;
     }
-    .cozumel a {
+    .more a {
         margin: 0 0 0 14em;
     } 
-    .disney a {
+    .featured a {
         margin: 0 0 0 14em;
     }
-    .thailand a {
-        margin: 0 0 0 14em;
-    }
-    .valpo a {
-        margin: 0 0 0 14em;
-    }  
     .more {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 1em;
+        grid-gap: 2em;
     }
     .featured {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 1em;
+        grid-gap: 2em;
     }
     .footer {
         display: grid;
@@ -593,6 +587,13 @@ footer li {
         margin: 1em 2em;
         grid-gap: 2em;
     }
+    .destinations {
+        grid-template-columns: 1fr 1fr;
+        margin: 1em 2em;
+        grid-gap: 3em;
+        margin: 0 2em;
+    }
+
     .more {
         grid-template-columns: 1fr 1fr;
         margin: 1em 2em;
@@ -603,6 +604,59 @@ footer li {
         margin: 1em 2em;
         grid-gap: 2em;
     }
-
+    .trip p {
+        text-justify: auto;
+        max-width: 70;
+        font-size: 1em;
+        text-align: left;
+        margin: 0.5em 1em 0.8em 1em;
+    }
+    .trip a {
+        margin: 0 0 0 20em;
+    }
+    .more a {
+        margin: 0 0 0 20em;
+    } 
+    .featured a {
+        margin: 0 0 0 20em;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .undecided {
+        margin: 5em 0em;
+        font-size: 4em;
+    }
+    .destinations {
+        grid-gap: 5em;
+        margin: 2em 10em;
+    }
+    .more {
+        grid-gap: 5em;
+        margin: 2em 10em;
+    }
+    .featured {
+        grid-gap: 5em;
+        margin: 2em 10em;
+    }
+    .trip a {
+        margin: 0 0 0 22em;
+    }
+    .more a {
+        margin: 0 0 0 23em;
+    } 
+    .featured a {
+        margin: 0 0 0 23em;
+    } 
+    footer h2 {
+        color: white;
+        font-size: 1.5em;
+        padding: 1em 2rem;
+    }
+    footer li {
+        color: white;
+        font-size: 1.2em;
+        padding: 1rem 2rem;
+        line-height: 0.4rem;
+    }          
 }
 
