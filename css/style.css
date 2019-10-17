@@ -420,12 +420,6 @@ footer li {
     margin: 1em;
 }
 
-
-
-  
-  
-  
-
 /* MEDIA QUERIES*/
 
 @media screen and (min-width: 500px) {
@@ -463,9 +457,6 @@ footer li {
     .navbar {
         grid-template-columns: auto auto auto;
     }
-    .navmenu > li {
-        display: inline-block;
-    }
     .mainmenu {
         display: none;
     }
@@ -488,6 +479,32 @@ footer li {
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
     }
+    .america a {
+        margin: 0 0 0 15em;
+    }
+    .europe a {
+        margin: 0 0 0 15em;
+    } 
+    .middleeast a {
+        margin: 0 0 0 15em;
+    }
+    .subtittle {
+        font-size: 1.5em;
+        padding: 0.4em 0.8em;
+        margin: 0.7em 0 0 0;
+    }
+    .cozumel a {
+        margin: 0 0 0 14em;
+    } 
+    .disney a {
+        margin: 0 0 0 14em;
+    }
+    .thailand a {
+        margin: 0 0 0 14em;
+    }
+    .valpo a {
+        margin: 0 0 0 14em;
+    }  
     .more {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -498,7 +515,14 @@ footer li {
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
     }
-
+    .footer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    footer li {
+        font-size: 0.8em;
+        line-height: 0.2rem;
+    }    
 }
 @media screen and (min-width: 930px) {
     .navbar {
